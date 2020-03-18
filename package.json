@@ -1,6 +1,6 @@
 {
 	"name": "@imedadel/cxs",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "Smallest and fastest css-in-js library, 0.4kb",
 	"repository": "https://github.com/ImedAdel/cxs",
 	"author": "Imed Adel <aadelimed@gmail.com>",
@@ -17,15 +17,15 @@
 	"module": "dist/cxs.module.js",
 	"unpkg": "dist/cxs.umd.js",
 	"files": [
-    "dist"
+		"dist"
 	],
 	"keywords": [
-    "styles",
-    "emotion",
-    "react",
-    "css",
-    "css-in-js"
-  ],
+		"styles",
+		"emotion",
+		"react",
+		"css",
+		"css-in-js"
+	],
 	"scripts": {
 		"build": "microbundle",
 		"dev": "microbundle watch",
