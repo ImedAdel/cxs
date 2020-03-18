@@ -1,0 +1,28 @@
+{
+	"name": "@imedadel/cxs",
+	"version": "0.0.1",
+	"description": "smallest and fastest css-in-js library",
+	"repository": "https://github.com/ImedAdel/cxs",
+	"author": "Imed Adel <aadelimed@gmail.com>",
+	"license": "MIT",
+	"private": false,
+	"devDependencies": {
+		"husky": "^4.2.3",
+		"microbundle": "^0.11.0",
+		"prettier": "1.19.1",
+		"pretty-quick": "^2.0.1"
+	},
+	"source": "src/index.js",
+	"main": "dist/cxs.js",
+	"module": "dist/cxs.module.js",
+	"unpkg": "dist/cxs.umd.js",
+	"scripts": {
+		"build": "microbundle",
+		"dev": "microbundle watch"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick --staged"
+		}
+	}
+}
