@@ -16,6 +16,9 @@
 	"main": "dist/cxs.js",
 	"module": "dist/cxs.module.js",
 	"unpkg": "dist/cxs.umd.js",
+	"files": [
+    "dist"
+  ],
 	"scripts": {
 		"build": "microbundle",
 		"dev": "microbundle watch"
