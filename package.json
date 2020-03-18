@@ -1,7 +1,7 @@
 {
 	"name": "@imedadel/cxs",
 	"version": "0.0.1",
-	"description": "smallest and fastest css-in-js library",
+	"description": "Smallest and fastest css-in-js library, 0.4kb",
 	"repository": "https://github.com/ImedAdel/cxs",
 	"author": "Imed Adel <aadelimed@gmail.com>",
 	"license": "MIT",
