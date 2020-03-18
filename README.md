@@ -82,3 +82,15 @@ Accepts a styles object returns a className string.
 ### Vendor prefixes
 
 `cxs` **does not** handle vendor prefixing to keep the module size at a minimum.
+
+## Benchmarks
+
+`new_cxs` is currently the fastest :)
+
+```
+inline-styles x 1,949 ops/sec ±11.38 % (69 runs sampled)
+cxs x 3,548 ops/sec ±3.45% (78 runs sampled)
+new_cxs x 5,178 ops/sec ±2.89% (80 runs sampled)
+emotion x 2,716 ops/sec ±4.37% (76 runs sampled)
+styled-components x 45.08 ops/sec ±26.64% (18 runs sampled)
+```
