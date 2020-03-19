@@ -8,7 +8,7 @@
   "private": false,
   "devDependencies": {
     "husky": "^4.2.3",
-    "microbundle": "^0.12.0-next.8",
+    "microbundle": "^0.11.0",
     "prettier": "1.19.1",
     "pretty-quick": "^2.0.1"
   },
