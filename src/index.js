@@ -12,21 +12,21 @@ const noAnd = s => s.replace(/&/g, "");
 
 // Use classic for-loop
 const parse = (obj, child = "", media) => {
-  let cns = [];
-  const keys = Object.keys(obj);
-  for (let index = 0; index < keys.length; index++) {
-    const val = obj[keys[index]];
+  let key,
+    cns = [];
+  for (key in obj) {
+    const val = obj[key];
     if (val === null) continue;
     if (typeof val === "object") {
-      const m2 = /^@/.test(keys[index]) ? keys[index] : null;
-      const c2 = m2 ? child : child + keys[index];
+      const m2 = /^@/.test(key) ? key : null;
+      const c2 = m2 ? child : child + key;
       cns.push(parse(val, c2, m2 || media));
       continue;
     }
-    const _key = keys[index] + val + child + media;
+    const _key = key + val + child + media;
     if (cache[_key]) return cache[_key];
     const className = "x" + rules.length.toString(36);
-    insert(mx(rx(className + noAnd(child), keys[index], val), media));
+    insert(mx(rx(className + noAnd(child), key, val), media));
     cache[_key] = className;
     cns.push(className);
   }
